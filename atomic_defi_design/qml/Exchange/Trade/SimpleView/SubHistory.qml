@@ -27,7 +27,9 @@ Item {
         reset()
         if(combo_base.currentTicker !== "All" | combo_rel.currentTicker !== "All") {
             buttonDelay.start()
-        } 
+        } else {
+            buttonDelay.start()
+        }
     }
 
     function reset() {
