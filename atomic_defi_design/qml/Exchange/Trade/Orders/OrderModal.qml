@@ -168,16 +168,19 @@ BasicModal {
             },
 
             // Recover Funds button
-            PrimaryButton {
+            DexAppButton {
                 Layout.fillWidth: true
                 enabled: !API.app.orders_mdl.recover_fund_busy
                 visible: !details ? false :
                     details.recoverable && details.order_status !== "refunding"
                 text: enabled ? qsTr("Recover Funds") : qsTr("Refunding...")
-                onClicked: API.app.orders_mdl.recover_fund(details.order_id)
+                onClicked: {
+                    Layout.fillWidth = true
+                    API.app.orders_mdl.recover_fund(details.order_id)
+                }
             },
 
-            PrimaryButton {
+            DexAppButton {
                 text: qsTr("View on Explorer")
                 Layout.fillWidth: true
                 visible: !details ? false : details.maker_payment_id !== '' || details.taker_payment_id !== ''
