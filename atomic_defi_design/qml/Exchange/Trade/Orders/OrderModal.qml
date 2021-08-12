@@ -175,7 +175,6 @@ BasicModal {
                     details.recoverable && details.order_status !== "refunding"
                 text: enabled ? qsTr("Recover Funds") : qsTr("Refunding...")
                 onClicked: {
-                    Layout.fillWidth = true
                     API.app.orders_mdl.recover_fund(details.order_id)
                 }
             },
