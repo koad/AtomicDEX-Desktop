@@ -1,4 +1,4 @@
-# [![AtomicDEX](https://i.ibb.co/D5GJLWy/adex.png)](https://atomicdex.io)
+## [![AtomicDEX](https://i.ibb.co/D5GJLWy/adex.png)](https://atomicdex.io)
 
 [![Discord](https://img.shields.io/discord/302123079818149888.svg?style=for-the-badge&logo=discord)](https://discord.gg/tvp96Gf)
 [![GitHub license](https://img.shields.io/github/license/KomodoPlatform/atomicDEX-Desktop?style=for-the-badge)](https://raw.githubusercontent.com/KomodoPlatform/atomicDEX-Desktop/master/LICENSE)
